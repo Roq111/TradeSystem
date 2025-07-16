@@ -1,0 +1,17 @@
+        self.data_sources = {
+            'yfinance': {'priority': 1, 'enabled': True},
+            'finnhub': {
+                'priority': 2, 
+                'enabled': bool(os.getenv('d1ocfhpr01qtrav0gllgd1ocfhpr01qtrav0glm0')),
+                'api_key': os.getenv('d1ocfhpr01qtrav0gllgd1ocfhpr01qtrav0glm0', '')
+            },
+            'alpha_vantage': {
+                'priority': 3,
+                'enabled': bool(os.getenv('494WCQDIZAHTAXK3')),
+                'api_key': os.getenv('494WCQDIZAHTAXK3', '')
+            }
+        }
+
+
+'finnhub': 'd1ocfhpr01qtrav0gllgd1ocfhpr01qtrav0glm0'
+'alpha_vantage': '494WCQDIZAHTAXK3'
